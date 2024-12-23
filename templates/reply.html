@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block boby %}
+
+<div class="container mt-5">
+    <!-- Reply Form -->
+    <h2 class="mb-4">Reply to Message</h2>
+    <form class="row g-3" action="/message/{{ data.sno }}/reply" method="POST">
+        <div class="col-md-4">
+            <label for="nameInput" class="form-label">Your Name</label>
+            <input type="text" class="form-control" name="Name" id="nameInput" placeholder="Enter your name" required aria-label="Enter your name">
+        </div>
+        <div class="col-md-8">
+            <label for="emailInput" class="form-label">Email Address</label>
+            <input type="email" class="form-control" name="Email" id="emailInput" placeholder="name@example.com" required aria-label="Enter your email">
+        </div>
+        <div class="col-md-6">
+            <label for="cityInput" class="form-label">City</label>
+            <input type="text" class="form-control" name="City" id="cityInput" placeholder="Enter your city" required aria-label="Enter your city">
+        </div>
+        <div class="col-12">
+            <label for="replyTextarea" class="form-label">Your Reply</label>
+            <textarea class="form-control" name="Reply" id="replyTextarea" rows="4" placeholder="Write your reply here..." required aria-label="Enter your reply"></textarea>
+        </div>
+        <div class="col-12 text-end">
+            <button type="submit" class="btn btn-primary">Submit Reply</button>
+        </div>
+    </form>
+
+    <!-- Replies Section -->
+    <div class="mt-5">
+        <h3>Previous Replies</h3>
+        {% if replies %}
+            <ul class="list-group">
+                {% for reply in replies %}
+                    <li class="list-group-item">
+                        <p class="mb-1"><strong>{{ reply.name }}</strong> ({{ reply.email }})</p>
+                        <p class="mb-0">{{ reply.message }}</p>
+                        <small class="text-muted">From: {{ reply.city }}</small>
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p class="text-muted">No replies yet.</p>
+        {% endif %}
+    </div>
+</div>
+{% endblock boby %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block boby %}
+
+<div class="message-container">
+    <h1>Message Details</h1>
+    <p><strong>Name:</strong> {{ data.name }}</p>
+    <p><strong>Email:</strong> {{ data.email }}</p>
+    <p><strong>City:</strong> {{ data.city }}</p>
+    <p><strong>Title:</strong> {{ data.title }}</p>
+    <p><strong>Message:</strong> {{ data.message }}</p>
+</div>
+
+
+<a href="/message/{{ data.sno }}/reply" class="btn btn-outline-success">Click to Reply</a>
+{% endblock boby %}

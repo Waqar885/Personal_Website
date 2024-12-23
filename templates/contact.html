@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block boby %}
+
+<div class="container">
+  <!-- Contact Form -->
+  <form class="row g-3" action="/contact" method="POST">
+    <div class="col-md-4">
+      <label for="validationDefault01" class="form-label">Enter your name</label>
+      <input type="text" class="form-control" name="Name" id="validationDefault01" required>
+    </div>
+    <div class="col-md-8">
+      <label for="exampleFormControlInput1" class="form-label">Enter your email address</label>
+      <input type="email" class="form-control" name="Email" id="exampleFormControlInput1" placeholder="name@example.com" required>
+    </div>
+    <div class="col-md-6">
+      <label for="validationDefault03" class="form-label">Enter your city</label>
+      <input type="text" class="form-control" name="City" id="validationDefault03" required>
+    </div>
+    <div class="col-md-4">
+      <label for="validationDefault01" class="form-label">Enter message title</label>
+      <input type="text" class="form-control" name="Title" id="validationDefault01" required>
+    </div>
+    <div class="col-12">
+      <label for="exampleFormControlTextarea1" class="form-label">Enter your message</label>
+      <textarea class="form-control" name="Message" id="exampleFormControlTextarea1" rows="3" required></textarea>
+    </div>
+    <div class="col-12">
+      <button class="btn btn-custom" type="submit">Send Message</button>
+    </div>
+  </form>
+</div>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        
+        <th scope="col"><center>S.No</center></th>
+        <th scope="col"><center>Name</center></th>
+        <th scope="col"><center>Email</center></th>
+        <th scope="col"><center>City</center></th>
+        <th scope="col"><center>Title</center></th>
+        <th scope="col"><center>Actions</center></th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for data in all_data %}
+      <tr>
+        <th scope="row">{{ loop.index }}</th>
+        <td><center>{{ data.name }}</center></td>
+        <td><center>{{ data.email }}</center></td>
+        <td><center>{{ data.city }}</center></td>
+        <td><center>{{ data.title }}</center></td>
+        <td><center><a href="/message/{{ data.sno }}" class="btn btn-outline-dark btn-sm">View Message</a>
+          <a href="/delete/{{ data.sno }}" class="btn btn-outline-dark btn-sm">Delete Message</a></center></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock boby %}
