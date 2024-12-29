@@ -37,7 +37,6 @@ body {
     letter-spacing: 2px;
 }
 
-/* Styling the profile images */
 .profile-header img {
     width: 30%;
     max-width: 300px;
@@ -109,149 +108,6 @@ body {
     padding: 10px 20px;
     border-radius: 30px;
     letter-spacing: 1px;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.btn-custom:hover {
-    background-color: #ff8c00;
-    transform: scale(1.05);
-}
-
-/* About Section Styling */
-.about-section {
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    padding: 40px 20px;
-    border-radius: 15px;
-    margin: 20px auto;
-    max-width: 900px;
-    text-align: left;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.8;
-    animation: fadeIn 1s ease-in-out;
-}
-
-.about-section h2 {
-    font-size: 2.5rem;
-    text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #ffd700;
-}
-
-.about-section h3 {
-    font-size: 1.8rem;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    color: #ff8c00;
-    text-decoration: underline;
-}
-
-.about-section .intro {
-    font-size: 1.2rem;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.about-section ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 0 20px 0;
-}
-
-.about-section ul li {
-    position: relative;
-    padding-left: 30px;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
-
-.about-section ul li:before {
-    content: "✔";
-    color: #ffd700;
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 1.2rem;
-}
-
-.about-section a {
-    color: #ffd700;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.about-section a:hover {
-    color: #ff8c00;
-    text-decoration: underline;
-}
-
-.about-section .fun-fact {
-    margin-top: 30px;
-    font-size: 1.2rem;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    font-style: italic;
-}
-
-/* Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-/* Form Container Styling */
-.container {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    color: white;
-    animation: fadeIn 1s ease-in-out;
-}
-
-/* Form Input Fields */
-form .form-label {
-    font-size: 1.2rem;
-    font-weight: 500;
-}
-
-form .form-control {
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 10px;
-    padding: 10px;
-    transition: all 0.3s ease;
-}
-
-form .form-control:focus {
-    background: rgba(255, 255, 255, 0.3);
-    border-color: #ffd700;
-    color: #000;
-    outline: none;
-    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
-}
-
-/* Buttons Styling */
-.btn-custom {
-    background-color: #ffd700;
-    color: #000;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    border-radius: 30px;
-    letter-spacing: 1px;
     transition: background-color 0.3s, transform 0.3s ease;
 }
 
@@ -275,50 +131,6 @@ form .form-control:focus {
     transform: scale(1.05);
 }
 
-/* Fade-In Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-.message-container {
-    max-width: 700px;
-    margin: 50px auto;
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 15px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    animation: fadeIn 1s ease-in-out;
-}
-
-.message-container h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #ffd700;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-.message-container p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin: 15px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    padding-bottom: 10px;
-}
-
-.message-container p strong {
-    color: #ff8c00;
-    font-weight: 600;
-}
-
 .btn-outline-success {
     display: block;
     margin: 30px auto;
@@ -340,14 +152,101 @@ form .form-control:focus {
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
 }
 
-/* Fade-in Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* About Section Styling */
+.about-section {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 40px 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 900px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    line-height: 1.8;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.about-section h3 {
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #ff8c00;
+    text-decoration: underline;
+}
+
+.about-section ul li:before {
+    content: "\2714";
+    color: #ffd700;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.2rem;
+}
+
+/* Form Styling */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+form .form-label {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+form .form-control {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+form .form-control:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: #ffd700;
+    color: #000;
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+/* Message Section Redesign */
+.message-container {
+    margin: 40px auto;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.message-container h2 {
+    text-align: center;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+.message-box {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.message-box h5 {
+    color: #ff8c00;
 }
